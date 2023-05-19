@@ -1,0 +1,87 @@
+/* =====VARIABLES===== */
+:root{
+    --font-color: #0f0f0f;
+    --bg-color: #ffffff;
+    --select-color: #bb5b10;
+}
+
+
+/* =====GLOBAL=SETTINGS===== */
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--font-color);
+}
+
+
+/* =====HEADER===== */
+header{
+    height: 60px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--font-color);
+}
+
+.col-left{
+    display: flex;
+}
+
+.head-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.head-logo img {
+    height: 50px;
+}
+
+.head-logo h1 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 6px;
+}
+
+.col-right{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 12px;
+}
+
+.nav-item:hover{/* стили, применяемые к элементу, когда на него наведён курсор */
+    border-top: 3px solid #ffffff00;
+    border-bottom: 3px solid var(--select-color);
+}
+
+#uniq-nav-item{
+    color: var(--select-color);
+    border: 3px solid var(--select-color);
+    margin-left: 6px;
+}
+
+#uniq-nav-item:hover{/* стили, применяемые к элементу, когда на него наведён курсор */
+    color: var(--bg-color);
+    background-color: var(--select-color);
+}
+
+
+ /* =====MAIN=====  */
+ main{
+    min-height: 600px;
+ }
